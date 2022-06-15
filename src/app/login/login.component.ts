@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   handleLogin(){
       if(this.userName==="Teboho" && this.password==="123"){
         // Navigate to welcome page
-        this.router.navigate(['welcome'])
+        this.router.navigate(['welcome', this.userName])
         this.isInvalidCredentials =false
 
       }
